@@ -1,1 +1,110 @@
+open terminal
+$ pwd
+$ playground@192 ~ % pwd
+/Users/mypc
+
+mkdir proejct_d
+cd project_d
+playground@192 project_d % git status
+fatal: not a git repository (or any of the parent directories): .git
+
+mkdir practice_git
+cd practce_git
+git init .
+
+playground@192 practice_git % git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+--------------
+--------------
+
+install git 
+git version
+
+## create a project folder
+git init .
+git status 
+
+## all git related files are in hidden folder .git
+ls -A
+.git 
+
+git config --global user.name "jitendra kumar"
+git config --global user.email "k.jitendra345@yahoo.com"
+
+git add .
+git add _fileName_
+git add _file1_ _file2_ . . .  _FileN_
+
+## and discard changes in working directory 
+git restore _fileName_
+
+## commit changes in working dir
+git commit -m "this is my first commit"
+
+# for creating new branch and working into that branch 
+
+git branch _BranchName_
+git checkout _BranchName_
+      OR
+git swicth _BranchName_
+      OR
+git switch -c _BranchName_
+
+##
+integration branch
+feature branch 
+
+merge feature branch into integration branch 
+###
+
+read git manual page
+
+git <command> -h
+git <command> --help
+
+git help branch
+git branch --help
+git branch -h
+
+# record latest commit in each branch 
+git branch -v  
+
+# merging branch 
+git switch main
+git merge feature_branch 
+
+
+# delete a branch
+git branch -v 
+"a base commit id can be seen post that for each branch"
+git branch
+git switch main_branch
+
+git branch -d _branchName_
+"a base commit id can be seen post that"
+
+playground@192 practice_git % git branch -d new_branch 
+error: The branch 'new_branch' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D new_branch'.
+
+git branch
+
+# to restore git deleted branch if accidentally done so
+git branch <deleted branch name> <base commit id>
+
+-----------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
